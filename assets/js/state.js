@@ -83,7 +83,7 @@ tbval.rows[i].cells[2].style='background-color: #5D8AA8; font-size: 15px;'
             
             
        }     
-            $.getJSON("https://cors-munnyreol.herokuapp.com/http://munnyreol.herokuapp.com/covid-19/?state="+state, function (data) {
+            $.getJSON("https://cors-anywhere.herokuapp.com/http://munnyreol.herokuapp.com/covid-19/?state="+state, function (data) {
             
             update=data.lastupdatedtime;
             $(".update").text(update)
